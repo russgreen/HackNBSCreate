@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="17.8" version="17.8" Modules="simple" RootPath="." Language="en" Id="{714F47E3-179B-43A0-B4AD-E84A2FB69D29}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_PREDEF_LCONDS_PROPS" Value="AI_DETECTED_DOTNET_VERSION"/>
+    <ROW Property="AI_REQUIRED_DOTNET_DISPLAY" MultiBuildValue="DefaultBuild:4.8" ValueLocId="-"/>
+    <ROW Property="AI_REQUIRED_DOTNET_VERSION" MultiBuildValue="DefaultBuild:4.8" ValueLocId="-"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="Manufacturer" Value="Hack NBS Create"/>
+    <ROW Property="ProductCode" Value="1033:{1B1EBC46-B725-4CAB-B5B4-C4A85284E1CE} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Hack NBS Create"/>
+    <ROW Property="ProductVersion" Value="1.0.1" Type="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{951EB536-19A3-452F-BD5A-D4C9D974969C}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="native_1_Dir" Directory_Parent="winx64_Dir" DefaultDir="native"/>
+    <ROW Directory="native_2_Dir" Directory_Parent="winx86_Dir" DefaultDir="native"/>
+    <ROW Directory="native_Dir" Directory_Parent="winarm_Dir" DefaultDir="native"/>
+    <ROW Directory="runtimes_Dir" Directory_Parent="APPDIR" DefaultDir="runtimes"/>
+    <ROW Directory="winarm_Dir" Directory_Parent="runtimes_Dir" DefaultDir="win-arm"/>
+    <ROW Directory="winx64_Dir" Directory_Parent="runtimes_Dir" DefaultDir="win-x64"/>
+    <ROW Directory="winx86_Dir" Directory_Parent="runtimes_Dir" DefaultDir="win-x86"/>
+    <ROW Directory="x64_Dir" Directory_Parent="APPDIR" DefaultDir="x64"/>
+    <ROW Directory="x86_Dir" Directory_Parent="APPDIR" DefaultDir="x86"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="APPDIR" ComponentId="{3DDB951A-FBDC-4F63-A86D-5EA8E6499B19}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="EntityFramework.SqlServer.dll" ComponentId="{C3A0B81D-FF56-4E35-A7A6-38B0199D1247}" Directory_="APPDIR" Attributes="0" KeyPath="EntityFramework.SqlServer.dll"/>
+    <ROW Component="EntityFramework.dll" ComponentId="{5BD8CD7C-8E2D-4DC4-B6E1-9328147E8B46}" Directory_="APPDIR" Attributes="0" KeyPath="EntityFramework.dll"/>
+    <ROW Component="HackNBSCreate.exe" ComponentId="{6FC0BFE7-DFCC-472C-8A48-3D36E0CA31C4}" Directory_="APPDIR" Attributes="0" KeyPath="HackNBSCreate.exe"/>
+    <ROW Component="HackNBSCreate.exe.config" ComponentId="{3F02F859-F9F1-4124-BBF6-3DD92F5E7735}" Directory_="APPDIR" Attributes="0" KeyPath="HackNBSCreate.exe.config" Type="0"/>
+    <ROW Component="Microsoft.AppCenter.Analytics.dll" ComponentId="{2AA680F5-D827-4BE5-871F-6BE845EFCE98}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.AppCenter.Analytics.dll"/>
+    <ROW Component="Microsoft.AppCenter.Crashes.dll" ComponentId="{63C2432C-5E31-404D-9437-AFDF1A4A8B39}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.AppCenter.Crashes.dll"/>
+    <ROW Component="Microsoft.AppCenter.dll" ComponentId="{83577107-03A5-436D-8C23-9376959E635E}" Directory_="APPDIR" Attributes="0" KeyPath="Microsoft.AppCenter.dll"/>
+    <ROW Component="Newtonsoft.Json.dll" ComponentId="{DCA3804E-50FA-4235-8DE7-A3E0A7CE689E}" Directory_="APPDIR" Attributes="0" KeyPath="Newtonsoft.Json.dll"/>
+    <ROW Component="ProductInformation" ComponentId="{FA8EA0AD-8A58-4F6F-B71A-EEF277650CB4}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="SQLite.Interop.dll" ComponentId="{58EF1CAB-2178-47B3-868C-1105FF079924}" Directory_="x64_Dir" Attributes="256" KeyPath="SQLite.Interop.dll"/>
+    <ROW Component="SQLite.Interop.dll_1" ComponentId="{046D6486-9C4B-44D8-86F0-C2907CEF0819}" Directory_="x86_Dir" Attributes="0" KeyPath="SQLite.Interop.dll_1"/>
+    <ROW Component="SQLitePCLRaw.batteries_v2.dll" ComponentId="{E4B40315-0E70-4832-94E5-5E842AF2AAE7}" Directory_="APPDIR" Attributes="0" KeyPath="SQLitePCLRaw.batteries_v2.dll"/>
+    <ROW Component="SQLitePCLRaw.core.dll" ComponentId="{870951C3-5754-4CB2-9DC4-E23C5C8237AE}" Directory_="APPDIR" Attributes="0" KeyPath="SQLitePCLRaw.core.dll"/>
+    <ROW Component="SQLitePCLRaw.nativelibrary.dll" ComponentId="{EC8B2F69-DFF1-453B-ADD7-2BA4753AAC12}" Directory_="APPDIR" Attributes="0" KeyPath="SQLitePCLRaw.nativelibrary.dll"/>
+    <ROW Component="SQLitePCLRaw.provider.dynamic_cdecl.dll" ComponentId="{2F6BCC8C-D96F-4B3E-BEEA-9484F63A3F6E}" Directory_="APPDIR" Attributes="0" KeyPath="SQLitePCLRaw.provider.dynamic_cdecl.dll"/>
+    <ROW Component="System.Buffers.dll" ComponentId="{D9782A6B-0CB8-497A-9AFA-16F9CE644471}" Directory_="APPDIR" Attributes="0" KeyPath="System.Buffers.dll"/>
+    <ROW Component="System.Data.SQLite.EF6.dll" ComponentId="{FE98B0C8-6809-4198-8270-C7D5768C1888}" Directory_="APPDIR" Attributes="0" KeyPath="System.Data.SQLite.EF6.dll"/>
+    <ROW Component="System.Data.SQLite.Linq.dll" ComponentId="{714DE8CF-9245-4B2C-B6C6-330055CBE9D7}" Directory_="APPDIR" Attributes="0" KeyPath="System.Data.SQLite.Linq.dll"/>
+    <ROW Component="System.Data.SQLite.dll" ComponentId="{AFCB780F-5D76-4B1C-A46A-C2C6DA217ADD}" Directory_="APPDIR" Attributes="0" KeyPath="System.Data.SQLite.dll"/>
+    <ROW Component="System.Memory.dll" ComponentId="{F284D6D6-07A8-4C6F-A95D-52547E0B107D}" Directory_="APPDIR" Attributes="0" KeyPath="System.Memory.dll"/>
+    <ROW Component="System.Numerics.Vectors.dll" ComponentId="{46B57AF1-FEC0-4683-BE68-846AE2289C84}" Directory_="APPDIR" Attributes="0" KeyPath="System.Numerics.Vectors.dll"/>
+    <ROW Component="System.Runtime.CompilerServices.Unsafe.dll" ComponentId="{260E35F8-78D4-4A0C-84B3-8A06B0DFA895}" Directory_="APPDIR" Attributes="0" KeyPath="System.Runtime.CompilerServices.Unsafe.dll"/>
+    <ROW Component="e_sqlite3.dll" ComponentId="{79761D98-655E-4C9B-B002-C5B561A97BB8}" Directory_="APPDIR" Attributes="0" KeyPath="e_sqlite3.dll"/>
+    <ROW Component="e_sqlite3.dll_1" ComponentId="{7FBE3E5A-2FE9-44AA-A171-ED2E748F3AB6}" Directory_="native_Dir" Attributes="0" KeyPath="e_sqlite3.dll_1"/>
+    <ROW Component="e_sqlite3.dll_2" ComponentId="{3B13D158-91B2-4785-B953-E6E5E74D51BB}" Directory_="native_1_Dir" Attributes="256" KeyPath="e_sqlite3.dll_2"/>
+    <ROW Component="e_sqlite3.dll_3" ComponentId="{31369461-1ABE-4278-9B66-6C46E5C3FFB0}" Directory_="native_2_Dir" Attributes="0" KeyPath="e_sqlite3.dll_3"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="EntityFramework.SqlServer.dll" Component_="EntityFramework.SqlServer.dll" FileName="ENTITY~1.DLL|EntityFramework.SqlServer.dll" Attributes="0" SourcePath="..\Hack NBS Create\bin\Release\net48\EntityFramework.SqlServer.dll" SelfReg="false"/>
+    <ROW File="Microsoft.AppCenter.Analytics.dll" Component_="Microsoft.AppCenter.Analytics.dll" FileName="MICROS~1.DLL|Microsoft.AppCenter.Analytics.dll" Attributes="0" SourcePath="..\Hack NBS Create\bin\Release\net48\Microsoft.AppCenter.Analytics.dll" SelfReg="false"/>
+    <ROW File="Microsoft.AppCenter.Crashes.dll" Component_="Microsoft.AppCenter.Crashes.dll" FileName="MICROS~2.DLL|Microsoft.AppCenter.Crashes.dll" Attributes="0" SourcePath="..\Hack NBS Create\bin\Release\net48\Microsoft.AppCenter.Crashes.dll" SelfReg="false"/>
+    <ROW File="Microsoft.AppCenter.dll" Component_="Microsoft.AppCenter.dll" FileName="MICROS~3.DLL|Microsoft.AppCenter.dll" Attributes="0" SourcePath="..\Hack NBS Create\bin\Release\net48\Microsoft.AppCenter.dll" SelfReg="false"/>
+    <ROW File="Newtonsoft.Json.dll" Component_="Newtonsoft.Json.dll" FileName="NEWTON~1.DLL|Newtonsoft.Json.dll" Attributes="0" SourcePath="..\Hack NBS Create\bin\Release\net48\Newtonsoft.Json.dll" SelfReg="false"/>
+    <ROW File="SQLitePCLRaw.batteries_v2.dll" Component_="SQLitePCLRaw.batteries_v2.dll" FileName="SQLITE~1.DLL|SQLitePCLRaw.batteries_v2.dll" Attributes="0" SourcePath="..\Hack NBS Create\bin\Release\net48\SQLitePCLRaw.batteries_v2.dll" SelfReg="false"/>
+    <ROW File="SQLitePCLRaw.core.dll" Component_="SQLitePCLRaw.core.dll" FileName="SQLITE~2.DLL|SQLitePCLRaw.core.dll" Attributes="0" SourcePath="..\Hack NBS Create\bin\Release\net48\SQLitePCLRaw.core.dll" SelfReg="false"/>
+    <ROW File="SQLitePCLRaw.nativelibrary.dll" Component_="SQLitePCLRaw.nativelibrary.dll" FileName="SQLITE~3.DLL|SQLitePCLRaw.nativelibrary.dll" Attributes="0" SourcePath="..\Hack NBS Create\bin\Release\net48\SQLitePCLRaw.nativelibrary.dll" SelfReg="false"/>
+    <ROW File="SQLitePCLRaw.provider.dynamic_cdecl.dll" Component_="SQLitePCLRaw.provider.dynamic_cdecl.dll" FileName="SQLITE~4.DLL|SQLitePCLRaw.provider.dynamic_cdecl.dll" Attributes="0" SourcePath="..\Hack NBS Create\bin\Release\net48\SQLitePCLRaw.provider.dynamic_cdecl.dll" SelfReg="false"/>
+    <ROW File="System.Buffers.dll" Component_="System.Buffers.dll" FileName="SYSTEM~1.DLL|System.Buffers.dll" Attributes="0" SourcePath="..\Hack NBS Create\bin\Release\net48\System.Buffers.dll" SelfReg="false"/>
+    <ROW File="System.Data.SQLite.dll" Component_="System.Data.SQLite.dll" FileName="SYSTEM~2.DLL|System.Data.SQLite.dll" Attributes="0" SourcePath="..\Hack NBS Create\bin\Release\net48\System.Data.SQLite.dll" SelfReg="false"/>
+    <ROW File="System.Data.SQLite.EF6.dll" Component_="System.Data.SQLite.EF6.dll" FileName="SYSTEM~3.DLL|System.Data.SQLite.EF6.dll" Attributes="0" SourcePath="..\Hack NBS Create\bin\Release\net48\System.Data.SQLite.EF6.dll" SelfReg="false"/>
+    <ROW File="System.Data.SQLite.Linq.dll" Component_="System.Data.SQLite.Linq.dll" FileName="SYSTEM~4.DLL|System.Data.SQLite.Linq.dll" Attributes="0" SourcePath="..\Hack NBS Create\bin\Release\net48\System.Data.SQLite.Linq.dll" SelfReg="false"/>
+    <ROW File="System.Memory.dll" Component_="System.Memory.dll" FileName="SYSTEM~5.DLL|System.Memory.dll" Attributes="0" SourcePath="..\Hack NBS Create\bin\Release\net48\System.Memory.dll" SelfReg="false"/>
+    <ROW File="System.Numerics.Vectors.dll" Component_="System.Numerics.Vectors.dll" FileName="SYSTEM~6.DLL|System.Numerics.Vectors.dll" Attributes="0" SourcePath="..\Hack NBS Create\bin\Release\net48\System.Numerics.Vectors.dll" SelfReg="false"/>
+    <ROW File="System.Runtime.CompilerServices.Unsafe.dll" Component_="System.Runtime.CompilerServices.Unsafe.dll" FileName="SYSTEM~7.DLL|System.Runtime.CompilerServices.Unsafe.dll" Attributes="0" SourcePath="..\Hack NBS Create\bin\Release\net48\System.Runtime.CompilerServices.Unsafe.dll" SelfReg="false"/>
+    <ROW File="HackNBSCreate.exe.config" Component_="HackNBSCreate.exe.config" FileName="HACKNB~1.CON|Hack NBS Create.exe.config" Attributes="0" SourcePath="..\Hack NBS Create\bin\Release\net48\Hack NBS Create.exe.config" SelfReg="false"/>
+    <ROW File="HackNBSCreate.exe" Component_="HackNBSCreate.exe" FileName="HACKNB~1.EXE|Hack NBS Create.exe" Attributes="0" SourcePath="..\Hack NBS Create\bin\Release\net48\Hack NBS Create.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="e_sqlite3.dll" Component_="e_sqlite3.dll" FileName="E_SQLI~1.DLL|e_sqlite3.dll" Attributes="0" SourcePath="..\Hack NBS Create\bin\Release\net48\e_sqlite3.dll" SelfReg="false"/>
+    <ROW File="EntityFramework.dll" Component_="EntityFramework.dll" FileName="ENTITY~2.DLL|EntityFramework.dll" Attributes="0" SourcePath="..\Hack NBS Create\bin\Release\net48\EntityFramework.dll" SelfReg="false"/>
+    <ROW File="e_sqlite3.dll_1" Component_="e_sqlite3.dll_1" FileName="E_SQLI~1.DLL|e_sqlite3.dll" Attributes="0" SourcePath="..\Hack NBS Create\bin\Release\net48\runtimes\win-arm\native\e_sqlite3.dll" SelfReg="false"/>
+    <ROW File="e_sqlite3.dll_2" Component_="e_sqlite3.dll_2" FileName="E_SQLI~1.DLL|e_sqlite3.dll" Attributes="0" SourcePath="..\Hack NBS Create\bin\Release\net48\runtimes\win-x64\native\e_sqlite3.dll" SelfReg="false"/>
+    <ROW File="e_sqlite3.dll_3" Component_="e_sqlite3.dll_3" FileName="E_SQLI~1.DLL|e_sqlite3.dll" Attributes="0" SourcePath="..\Hack NBS Create\bin\Release\net48\runtimes\win-x86\native\e_sqlite3.dll" SelfReg="false"/>
+    <ROW File="SQLite.Interop.dll" Component_="SQLite.Interop.dll" FileName="SQLITE~1.DLL|SQLite.Interop.dll" Attributes="0" SourcePath="..\Hack NBS Create\bin\Release\net48\x64\SQLite.Interop.dll" SelfReg="false"/>
+    <ROW File="SQLite.Interop.dll_1" Component_="SQLite.Interop.dll_1" FileName="SQLITE~1.DLL|SQLite.Interop.dll" Attributes="0" SourcePath="..\Hack NBS Create\bin\Release\net48\x86\SQLite.Interop.dll" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrapperUISequenceComponent">
+    <ROW Action="AI_DetectSoftware" Sequence="151"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="Setup Files" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="SoftwareDetector.dll" SourcePath="&lt;AI_CUSTACTS&gt;SoftwareDetector.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DetectSoftware" Type="257" Source="SoftwareDetector.dll" Target="OnDetectSoftware"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[ProgramFilesFolder]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="EntityFramework.SqlServer.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.AppCenter.Analytics.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.AppCenter.Crashes.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.AppCenter.dll"/>
+    <ROW Feature_="MainFeature" Component_="Newtonsoft.Json.dll"/>
+    <ROW Feature_="MainFeature" Component_="SQLitePCLRaw.batteries_v2.dll"/>
+    <ROW Feature_="MainFeature" Component_="SQLitePCLRaw.core.dll"/>
+    <ROW Feature_="MainFeature" Component_="SQLitePCLRaw.nativelibrary.dll"/>
+    <ROW Feature_="MainFeature" Component_="SQLitePCLRaw.provider.dynamic_cdecl.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Buffers.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Data.SQLite.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Data.SQLite.EF6.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Data.SQLite.Linq.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Memory.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Numerics.Vectors.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Runtime.CompilerServices.Unsafe.dll"/>
+    <ROW Feature_="MainFeature" Component_="HackNBSCreate.exe.config"/>
+    <ROW Feature_="MainFeature" Component_="HackNBSCreate.exe"/>
+    <ROW Feature_="MainFeature" Component_="e_sqlite3.dll"/>
+    <ROW Feature_="MainFeature" Component_="EntityFramework.dll"/>
+    <ROW Feature_="MainFeature" Component_="e_sqlite3.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="e_sqlite3.dll_2"/>
+    <ROW Feature_="MainFeature" Component_="e_sqlite3.dll_3"/>
+    <ROW Feature_="MainFeature" Component_="SQLite.Interop.dll"/>
+    <ROW Feature_="MainFeature" Component_="SQLite.Interop.dll_1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="HackNBSCreate.exe" SourcePath="..\Hack NBS Create\application.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_DetectSoftware" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_DetectSoftware" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="AI_DETECTED_DOTNET_VERSION &gt;= AI_REQUIRED_DOTNET_VERSION" Description="[ProductName] cannot be installed on systems with .NET Framework version lower than [AI_REQUIRED_DOTNET_DISPLAY]." DescriptionLocId="AI.LaunchCondition.DotNET" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="HackNBSCreate" Directory_="DesktopFolder" Name="HACKNB~1|Hack NBS Create" Component_="HackNBSCreate.exe" Target="[#HackNBSCreate.exe]" Hotkey="0" Icon_="HackNBSCreate.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>
